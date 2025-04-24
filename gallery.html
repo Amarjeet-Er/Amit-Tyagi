@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Amit Tyagi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Edu+TAS+Beginner:wght@400..700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link rel="stylesheet" href="lib/animate/animate.min.css" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid bg-dark shadow">
+        <div class="container shadow d-flex align-items-center justify-content-between">
+            <!-- Brand Section -->
+            <a href="#" class="d-flex align-items-center" style="height: 50px;">
+                <h1 class="text-primary mb-0"><i class="fas fa-bolt"></i> Amit Tyagi</h1>
+            </a>
+
+            <!-- Navbar Section -->
+            <nav class="navbar navbar-expand-lg navbar-light w-50 justify-content-end">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="fa fa-bars"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                    <div class="navbar-nav bg-white d-flex justify-content-evenly">
+                        <a href="index.html" class="nav-item nav-link">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="gallery.html" class="nav-item nav-link active">Gallery</a>
+                        <a href="video.html" class="nav-item nav-link">Video</a>
+                        <a href="contact.html" class="btn btn-primary py-2 px-4 ms-lg-3">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+
+
+    <!-- Gallery Section Start -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Photo Gallery</h2>
+            <div class="row g-4">
+
+                <!-- Gallery Items -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery1.jpeg" class="img-fluid gallery-img" alt="Gallery 1"
+                            data-index="0" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery2.jpeg" class="img-fluid gallery-img" alt="Gallery 2"
+                            data-index="1" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery3.jpeg" class="img-fluid gallery-img" alt="Gallery 3"
+                            data-index="2" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery5.jpeg" class="img-fluid gallery-img" alt="Gallery 4"
+                            data-index="3" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery6.jpeg" class="img-fluid gallery-img" alt="Gallery 5"
+                            data-index="4" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery7.jpeg" class="img-fluid gallery-img" alt="Gallery 6"
+                            data-index="5" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery8.jpeg" class="img-fluid gallery-img" alt="Gallery 7"
+                            data-index="6" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery9.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="7" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery10.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="8" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery11.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="9" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery12.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="10" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery13.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="11" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery14.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="12" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery15.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="13" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery16.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="14" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery17.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="15" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery18.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="16" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery19.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="17" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery20.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="18" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery21.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="19" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery22.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="20" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery23.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="21" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery24.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="22" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery25.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="23" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery26.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="24" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery27.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="25" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery28.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="26" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery29.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="27" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery30.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="28" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery31.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="29" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery32.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="30" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery33.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="31" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery34.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="32" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery35.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="33" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery36.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="34" onclick="openModal(this)">
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 border border-primary rounded-4 shadow-lg overflow-hidden">
+                        <img src="bhanu-gallery/gallery37.jpeg" class="img-fluid gallery-img" alt="Gallery 8"
+                            data-index="35" onclick="openModal(this)">
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-md"> <!-- changed to modal-md -->
+            <div class="modal-content bg-dark"> <!-- changed to modal-content -->
+                <div class="modal-body position-relative text-center p-0">
+                    <img id="modalImage" src="" class="img-fluid w-100" alt="Full Image">
+
+                    <!-- Prev Button -->
+                    <button class="btn btn-light position-absolute top-50 start-0 translate-middle-y"
+                        style="z-index: 1050;" onclick="prevImage()">❮</button>
+
+                    <!-- Next Button -->
+                    <button class="btn btn-light position-absolute top-50 end-0 translate-middle-y"
+                        style="z-index: 1050;" onclick="nextImage()">❯</button>
+
+                    <!-- Close Button -->
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2"
+                        data-bs-dismiss="modal"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const galleryImages = [
+            "bhanu-gallery/gallery1.jpeg",
+            "bhanu-gallery/gallery2.jpeg",
+            "bhanu-gallery/gallery3.jpeg",
+            "bhanu-gallery/gallery5.jpeg",
+            "bhanu-gallery/gallery6.jpeg",
+            "bhanu-gallery/gallery7.jpeg",
+            "bhanu-gallery/gallery8.jpeg",
+            "bhanu-gallery/gallery9.jpeg",
+            "bhanu-gallery/gallery10.jpeg",
+            "bhanu-gallery/gallery11.jpeg",
+            "bhanu-gallery/gallery12.jpeg",
+            "bhanu-gallery/gallery13.jpeg",
+            "bhanu-gallery/gallery14.jpeg",
+            "bhanu-gallery/gallery15.jpeg",
+            "bhanu-gallery/gallery16.jpeg",
+            "bhanu-gallery/gallery17.jpeg",
+            "bhanu-gallery/gallery18.jpeg",
+            "bhanu-gallery/gallery19.jpeg",
+            "bhanu-gallery/gallery20.jpeg",
+            "bhanu-gallery/gallery21.jpeg",
+            "bhanu-gallery/gallery22.jpeg",
+            "bhanu-gallery/gallery23.jpeg",
+            "bhanu-gallery/gallery24.jpeg",
+            "bhanu-gallery/gallery25.jpeg",
+            "bhanu-gallery/gallery26.jpeg",
+            "bhanu-gallery/gallery27.jpeg",
+            "bhanu-gallery/gallery28.jpeg",
+            "bhanu-gallery/gallery29.jpeg",
+            "bhanu-gallery/gallery30.jpeg",
+            "bhanu-gallery/gallery31.jpeg",
+            "bhanu-gallery/gallery32.jpeg",
+            "bhanu-gallery/gallery33.jpeg",
+            "bhanu-gallery/gallery34.jpeg",
+            "bhanu-gallery/gallery35.jpeg",
+            "bhanu-gallery/gallery36.jpeg",
+            "bhanu-gallery/gallery37.jpeg",
+        ];
+
+        let currentIndex = 0;
+
+        function openModal(img) {
+            currentIndex = parseInt(img.dataset.index);
+            document.getElementById("modalImage").src = galleryImages[currentIndex];
+            new bootstrap.Modal(document.getElementById("imageModal")).show();
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % galleryImages.length;
+            document.getElementById("modalImage").src = galleryImages[currentIndex];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + galleryImages.length) % galleryImages.length;
+            document.getElementById("modalImage").src = galleryImages[currentIndex];
+        }
+    </script>
+
+    <!-- Gallery Section End -->
+
+
+
+
+    <!-- Footer Start -->
+    <footer class="bg-dark text-light pt-5 pb-4 shadow-lg mt-5">
+        <div class="container">
+            <div class="row gy-4 gx-5">
+
+                <!-- Logo & About -->
+                <div class="col-md-4">
+                    <h5 class="fw-bold">Amit Tyagi</h5>
+                    <p class="text-muted small">
+                        BJP Jila Adhyaksh – Dedicated to public service and digital empowerment. Follow for latest
+                        updates.
+                    </p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-light social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-light social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-light social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-semibold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="footer-link">Home</a></li>
+                        <li><a href="#" class="footer-link">Gallery</a></li>
+                        <li><a href="#" class="footer-link">Videos</a></li>
+                        <li><a href="#" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-6 col-md-3">
+                    <h6 class="fw-semibold mb-3">Contact</h6>
+                    <ul class="list-unstyled small text-muted">
+                        <li class="mb-2 footer-link"><i class="fas fa-phone-alt me-2"></i>+91 9876543210</li>
+                        <li class="mb-2 footer-link"><i class="fas fa-envelope me-2"></i>contact@amitbjp.in</li>
+                        <li class="mb-2 footer-link"><i class="fas fa-map-marker-alt me-2"></i>Noida, Uttar Pradesh</li>
+                    </ul>
+                </div>
+
+                <!-- Google Map -->
+                <div class="col-md-3">
+                    <h6 class="fw-semibold mb-3">Location</h6>
+                    <div class="ratio ratio-4x3 rounded border" style="height: 100px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14018.867225947974!2d77.36385955!3d28.53551665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5513b7d2335%3A0x362a541dcb60197b!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1683056278185!5m2!1sen!2sin"
+                            width="100%" height="100" style="border: 0 !important;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-4">
+
+            <div class="text-center small text-muted">
+                © 2025 Amit Tyagi | Designed by Macreel Infosoft
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

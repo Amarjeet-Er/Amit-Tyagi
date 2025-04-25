@@ -30,7 +30,6 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -46,33 +45,41 @@
 
 
 
-    <!-- Navbar & Hero Start -->
-    <div class="container-fluid bg-dark shadow">
-        <div class="container shadow d-flex align-items-center justify-content-between">
-            <!-- Brand Section -->
-            <a href="#" class="d-flex align-items-center" style="height: 50px;">
-                <h1 class="text-primary mb-0"><i class="fas fa-bolt"></i> Amit Tyagi</h1>
+    <nav class="navbar navbar-expand-lg navbar-light !bg-dark">
+        <div class="container">
+            <!-- Logo + Name -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="img/logo.png" width="120" class="me-2">
+                <span class="text-primary fw-bold">(Amit Tyagi)</span>
             </a>
 
-            <!-- Navbar Section -->
-            <nav class="navbar navbar-expand-lg navbar-light w-50 justify-content-end">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars"></span>
-                </button>
+            <!-- Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                    <div class="navbar-nav bg-white d-flex justify-content-evenly">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link active">About</a>
-                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
-                        <a href="video.html" class="nav-item nav-link">Video</a>
-                        <a href="contact.html" class="btn btn-primary py-2 px-4 ms-lg-3">Contact</a>
-                    </div>
-                </div>
-            </nav>
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav text-center  text-lg-start">
+                    <li class="nav-item">
+                        <a class="nav-link nav-mobile-btn" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link nav-mobile-btn" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-mobile-btn" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-mobile-btn" href="video.html">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary ms-lg-3 mt-2 mt-lg-0" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <!-- Navbar & Hero End -->
+    </nav>
 
 
 
@@ -80,33 +87,36 @@
 
     <div class="container py-5">
         <div class="row align-items-center">
-            <!-- Image Section -->
-            <div class="col-md-6 wow fadeInLeft">
-                <img src="/img/slider-1.png" alt="About Us Image" class="img-fluid rounded">
-            </div>
 
             <!-- Content Section -->
-            <div class="col-md-6 wow fadeInRight">
+            <div class="col-md-6 wow fadeInLeft">
                 <h1 class="fw-bold text-primary">About Us</h1>
                 <p>
-                    Amit Tyagi, serving as the BJP Jila Adhyaksh, is a dynamic and dedicated leader committed to the
-                    vision of Sabka Saath, Sabka Vikas. With deep roots in grassroots politics and a strong connection
-                    with the people of his district, he has continuously worked towards empowering local communities and
-                    strengthening the BJP's organizational structure at the district level.
+                    Bhartiya Kisan Union (Bhanu) is a grassroots-driven farmers’ movement that champions the cause of
+                    India’s agricultural community. Rooted in the spirit of unity, justice, and progress, BKU (Bhanu)
+                    represents millions of farmers and works relentlessly to amplify their voices at the state and
+                    national levels.
                 </p>
                 <p>
-                    Under his leadership, the district has witnessed significant progress in areas such as rural
-                    development, youth engagement, women's empowerment, and social welfare. Amit Tyagi is known for his
-                    transparent working style, accessibility to the public, and ability to mobilize party workers with
-                    enthusiasm and discipline.
+                    The union stands as a pillar of strength for farmers facing challenges like unfair market prices,
+                    outdated policies, and lack of government support. With a clear mission to protect the rights of
+                    annadatas (food providers), BKU (Bhanu) organizes peaceful protests, policy discussions, and
+                    awareness campaigns to drive meaningful change.
                 </p>
 
                 <p>
-                    As Jila Adhyaksh, Amit Tyagi remains committed to carrying forward the BJP’s mission with honesty,
-                    dedication, and a strong vision for a self-reliant and empowered Bharat.
+                    Rashtriya Mantri Amit Tyagi, a dynamic and influential leader, plays a crucial role in shaping the
+                    union’s strategies and outreach. Known for his commitment to farmer empowerment and national
+                    development, he brings passion, integrity, and experience to the movement.
                 </p>
 
             </div>
+
+            <!-- Image Section -->
+            <div class="col-md-6 wow fadeInRight">
+                <img src="/img/mobile-s2.png" alt="About Us Image" class="img-fluid rounded">
+            </div>
+
         </div>
     </div>
 
@@ -117,7 +127,7 @@
     <!-- Footer Start -->
     <footer class="bg-dark text-light pt-5 pb-4 shadow-lg mt-5">
         <div class="container">
-            <div class="row gy-4 gx-5">
+            <div class="row gy-4 !gx-5">
 
                 <!-- Logo & About -->
                 <div class="col-md-4">
@@ -138,10 +148,10 @@
                 <div class="col-6 col-md-2">
                     <h6 class="fw-semibold mb-3">Quick Links</h6>
                     <ul class="list-unstyled small">
-                        <li><a href="#" class="footer-link">Home</a></li>
-                        <li><a href="#" class="footer-link">Gallery</a></li>
-                        <li><a href="#" class="footer-link">Videos</a></li>
-                        <li><a href="#" class="footer-link">Contact</a></li>
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="gallery.html" class="footer-link">Gallery</a></li>
+                        <li><a href="video.html" class="footer-link">Video</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
                     </ul>
                 </div>
 
@@ -149,16 +159,17 @@
                 <div class="col-6 col-md-3">
                     <h6 class="fw-semibold mb-3">Contact</h6>
                     <ul class="list-unstyled small text-muted">
-                        <li class="mb-2 footer-link"><i class="fas fa-phone-alt me-2"></i>+91 9876543210</li>
-                        <li class="mb-2 footer-link"><i class="fas fa-envelope me-2"></i>contact@amitbjp.in</li>
-                        <li class="mb-2 footer-link"><i class="fas fa-map-marker-alt me-2"></i>Noida, Uttar Pradesh</li>
+                        <li class="mb-2 footer-link"><i class="fas fa-phone-alt me-2"></i>+91 9958586351</li>
+                        <li class="mb-2 footer-link"><i class="fas fa-envelope me-2"></i>amit@amittyagibeehta.com</li>
+                        <li class="mb-2 footer-link"><i class="fas fa-map-marker-alt me-2"></i>B96/E4, Sector-60, Noida
+                        </li>
                     </ul>
                 </div>
 
                 <!-- Google Map -->
                 <div class="col-md-3">
                     <h6 class="fw-semibold mb-3">Location</h6>
-                    <div class="ratio ratio-4x3 rounded border" style="height: 100px;">
+                    <div class="ratio !ratio-4x3 rounded border" style="height: 100px;">
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14018.867225947974!2d77.36385955!3d28.53551665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5513b7d2335%3A0x362a541dcb60197b!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1683056278185!5m2!1sen!2sin"
                             width="100%" height="100" style="border: 0 !important;" allowfullscreen="" loading="lazy"
